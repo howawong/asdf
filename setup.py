@@ -7,7 +7,7 @@ class MyInstall(install):
     def run(self):
         a = subprocess.check_output([
             'apt-get',
-            'insall',
+            'install',
             '-y',
             'glibc'
         ])
