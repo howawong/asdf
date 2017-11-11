@@ -6,7 +6,10 @@ import subprocess
 class MyInstall(install):
     def run(self):
         a = subprocess.check_output([
-            'apt-get install -y glibc'
+            'apt-get',
+            'insall',
+            '-y',
+            'glibc'
         ])
         install.run(self)
 # in the setup function:
